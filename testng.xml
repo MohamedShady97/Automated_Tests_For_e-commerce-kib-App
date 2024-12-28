@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="E-commerce Test Suite" parallel="none">
+    <listeners>
+        <listener class-name="app.e_commerce.kib.utils.ExtentReportListener"/>
+    </listeners>
+    <test name="E-commerce Test Cases">
+        <classes>
+            <class name="app.e_commerce.kib.testcases.TC01_AddProduct"/>
+            <class name="app.e_commerce.kib.testcases.TC02_EditProduct"/>
+            <class name="app.e_commerce.kib.testcases.TC03_DeleteProduct"/>
+            <class name="app.e_commerce.kib.testcases.TC04_SearchForSpecificProduct"/>
+            <class name="app.e_commerce.kib.testcases.TC05_SearchForMultipleProducts"/>
+        </classes>
+    </test>
+</suite>
